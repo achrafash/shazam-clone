@@ -1,7 +1,5 @@
 assets/
 
-*.json
-*.onnx
 *.wav
 .env
 

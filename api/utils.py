@@ -48,7 +48,7 @@ def load_library(filepath:str):
     return library
 
 
-def run_inference(input_data, model_path:str="./simclr_1647873519.onnx"):
+def run_inference(input_data, model_path:str="./model.onnx"):
     ort_sess = ort.InferenceSession(model_path)
     projection = ort_sess.run(None, {'input': np.expand_dims(input_data,(0,1))})
     return projection
